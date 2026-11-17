@@ -1,0 +1,83 @@
+{
+  "features": [
+    "bedrooms",
+    "size",
+    "city",
+    "furnishing"
+  ],
+  "choices": {
+    "city": [
+      "Kasarani",
+      "Kayole",
+      "Kileleshwa",
+      "Kitengela",
+      "Muthaiga",
+      "Runda"
+    ],
+    "furnishing": [
+      "Furnished",
+      "Semi-Furnished",
+      "Unfurnished"
+    ]
+  },
+  "categories": [
+    "affordable",
+    "average",
+    "expensive"
+  ],
+  "currency": "KES",
+  "thresholds": {
+    "affordable_max": 15500.0,
+    "average_max": 87500.0
+  },
+  "selected_models": {
+    "regressor": "Neural Network",
+    "classifier": "Neural Network"
+  },
+  "comparison": {
+    "regression": [
+      {
+        "model": "Ridge",
+        "r2": 0.9234,
+        "mae": 14315.05,
+        "rmse": 29315.62
+      },
+      {
+        "model": "Lasso",
+        "r2": 0.9312,
+        "mae": 13848.99,
+        "rmse": 27777.64
+      },
+      {
+        "model": "KNN",
+        "r2": 0.9287,
+        "mae": 15154.67,
+        "rmse": 28288.8
+      },
+      {
+        "model": "Neural Network",
+        "r2": 0.9495,
+        "mae": 13446.33,
+        "rmse": 23788.9
+      }
+    ],
+    "classification": [
+      {
+        "model": "Naive Bayes",
+        "accuracy": 0.8298,
+        "f1_weighted": 0.8141
+      },
+      {
+        "model": "KNN",
+        "accuracy": 0.9335,
+        "f1_weighted": 0.9333
+      },
+      {
+        "model": "Neural Network",
+        "accuracy": 0.9466,
+        "f1_weighted": 0.9466
+      }
+    ]
+  },
+  "training_rows": 4963
+}
